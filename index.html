@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navigation-bar">
+      <img src="/images/logo.png" alt="" class="logo" />
+      <ul class="nav-bar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our service</a></li>
+        <li><a href="#">Our project</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <img
+          src="/images/close-icon.png"
+          alt=""
+          class="close-icon"
+          onclick="closeIcon()"
+        />
+      </ul>
+      <img
+        src="/images/menu.png"
+        alt=""
+        class="menu-icon"
+        onclick="openIcon()"
+      />
+    </div>
+    <div class="hero-section">
+      <div class="hero-text">
+        <h3>
+          We help you materialize <br />
+          your design imagination
+        </h3>
+        <button class="nav-btn">View Project</button>
+      </div>
+    </div>
+    <div class="about">
+      <img src="/images/section1.png" alt="" />
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+          Et, non sit quisque tempus. Nisl, sem convallis urna sed.<br />
+          Cras tempor blandit tincidunt tempor sed at. Laoreet <br />facilisis
+          lectus sapien nunc facilisi suspendisse nunc sit et.<br />
+          Elementum odio ante enim vulputate neque. Praesent <br />tempus in eu
+          ultricies a. Cum in viverra euismod fringilla.
+        </p>
+        <button>Learn More</button>
+      </div>
+    </div>
+    <div class="ourservice">
+      <h4>Our Service</h4>
+      <div class="ourservice-image">
+        <div class="image1">
+          <img src="/images/ourservice1.png" alt="" />
+          <p>Construction</p>
+        </div>
+        <div class="image2">
+          <img src="/images/ourservice2.png" alt="" />
+          <p>Scaffolding</p>
+        </div>
+        <div class="image3">
+          <img src="/images/ourservice3.png" alt="" />
+          <p>Real Estate</p>
+        </div>
+      </div>
+    </div>
+    <section class="arrow">
+      <img src="/images/Arrow 1.png" alt="" />
+      <p>View All</p>
+    </section>
+    <div class="contact">
+      <div class="contact-text">
+        <h5>
+          Over 3 Decades of Experience in<br />
+          Construction
+        </h5>
+        <button class="contact-btn">Contact Us</button>
+      </div>
+    </div>
+    <section class="project">
+      <h5>Our Project</h5>
+      <div class="project-image">
+        <div class="project1">
+          <img src="/images/project1.png" alt="" />
+          <p>Commercial Construction</p>
+        </div>
+        <div class="project2">
+          <img src="/images/project2.png" alt="" />
+          <p>Property Development</p>
+        </div>
+        <div class="project3">
+          <img src="/images/project3.png" alt="" />
+          <p>House Renovation</p>
+        </div>
+      </div>
+    </section>
+    <section class="testimonial">
+      <h5>Testimonial</h5>
+      <div class="testimonial-content">
+        <img src="/images/testimonial-image.png" alt="" /
+        class="testimonial-image">
+        <div class="testimonial-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In<br />
+            quam egestas posuere odio sed auctor. Nam enim tellus,<br />
+            eget arcu, sollicitudin amet volutpat morbi quam. Egestas<br />
+            tristique aliquam sem pellentesque accumsan, diam. Quis<br />
+            tortor iaculis sapien eu neque, mattis vel. Quam libero
+            <br />gravida et.
+          </p>
+          <span>Mr. Tunde Babalawo</span>
+          <h6>Agule Company Limited</h6>
+        </div>
+      </div>
+    </section>
+    <script>
+      let navBar = document.querySelector(".nav-bar");
+      let isNavBarVisible = true;
+      function closeIcon() {
+        if (isNavBarVisible) {
+          navBar.style.display = "none";
+        }
+      }
+      function openIcon() {
+        if (isNavBarVisible) {
+          navBar.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
