@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: poppins;
 }
 
 .navigation-bar {
@@ -96,6 +97,11 @@
     font-size: 20px;
     font-weight: 400;
     border-radius: 1px;
+    transition: all 0.7s ease;
+  }
+
+  .hero-text button:hover {
+    transform: scale(0.7);
   }
 
   .about {
@@ -104,6 +110,12 @@
     gap: 5rem;
     padding: 4rem 6.4rem;
   }
+  .about img {
+    transition: all 1s ease;
+  }
+  .about img:hover {
+    transform: scale(0.9);
+  }
 
   .about-text {
     padding-top: 3.3rem;
@@ -111,7 +123,7 @@
 
   .about-text h2 {
     color: #b50606;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 45px;
   }
 
@@ -144,7 +156,7 @@
   .ourservice h4 {
     text-align: center;
     font-size: 45px;
-    font-weight: 300;
+    font-weight: 400;
     color: #b50606;
   }
 
@@ -293,6 +305,7 @@
     color: #b50606;
     font-size: 40px;
     font-weight: 600;
+    font-family: Raleway;
   }
   .testimonial-content {
     display: flex;
@@ -321,7 +334,114 @@
   .testimonial-text h6 {
     margin-left: 7rem;
     font-size: 25px;
+    font-weight: 600;
+    font-family: Raleway;
+  }
+  .news-and-events {
+    padding-top: 0.5rem;
+    padding-bottom: 4rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+  }
+  .news-and-events h5 {
+    text-align: center;
+    color: #b50606;
+    font-size: 40px;
     font-weight: 500;
+    font-family: Raleway;
+  }
+  .news-image {
+    display: flex;
+    justify-content: center;
+    gap: 1.3rem;
+    padding-top: 1.1rem;
+  }
+  .news-image img {
+    width: 100%;
+  }
+  .news-image1,
+  .news-image2,
+  .news-image3,
+  .news-image4 {
+    transition: all 1s ease;
+  }
+  .news-image1:hover {
+    transform: scale(0.9);
+  }
+  .news-image2:hover {
+    transform: scale(0.9);
+  }
+  .news-image3:hover {
+    transform: scale(0.9);
+  }
+  .news-image4:hover {
+    transform: scale(0.9);
+  }
+  .title {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Raleway;
+  }
+  .note {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .Read {
+    margin-left: 3.9rem;
+    margin-top: 0.7rem;
+    display: block;
+    color: #b50606;
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .news-letter {
+    background-color: #111111cc;
+    padding: 3rem 0.7rem;
+    text-align: center;
+  }
+
+  .news-letter h5 {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Raleway;
+  }
+  .news-letter-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .letter-input input {
+    padding: 0.7rem 10rem 0.7rem 0.9rem;
+    width: 100%;
+    display: block;
+    border: 0;
+    outline: 0;
+    margin-top: 0.9rem;
+    background-color: #ffffffb3;
+  }
+  input::placeholder {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    display: block;
+    font-family: Raleway;
+  }
+
+  .letter-button button {
+    padding: 0.6rem 1.9rem 0.6rem 0.5rem;
+    display: block;
+    border: 0;
+    outline: 0;
+    margin-top: 1.2rem;
+    background-color: #b50606;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: right;
+    font-family: Raleway;
   }
 }
 @media screen and (min-width: 100px) and (max-width: 770px) {
@@ -394,6 +514,10 @@
     font-size: 15px;
     border-radius: 1px;
     align-items: center;
+    transition: all 1s ease;
+  }
+  .hero-text button:hover {
+    transform: scale(0.7);
   }
 
   .about {
@@ -406,6 +530,11 @@
   .about img {
     width: 100%;
     height: auto;
+    transition: all 1s ease;
+  }
+
+  .about img:hover {
+    transform: scale(0.9);
   }
 
   .about-text {
@@ -590,6 +719,7 @@
     color: #b50606;
     font-size: 40px;
     font-weight: 600;
+    font-family: Raleway;
   }
   .testimonial-content {
     display: flex;
@@ -619,5 +749,63 @@
   .testimonial-text h6 {
     font-size: 20px;
     font-weight: 500;
+  }
+  .news-and-events {
+    padding: 0.5rem 0.7rem;
+  }
+  .news-and-events h5 {
+    text-align: center;
+    color: #b50606;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: Raleway;
+  }
+  .news-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.3rem;
+    padding-top: 1.1rem;
+  }
+  .news-image img {
+    width: 100%;
+  }
+  .news-image1,
+  .news-image2,
+  .news-image3,
+  .news-image4 {
+    transition: all 1s ease;
+  }
+  .news-image1:hover {
+    transform: scale(0.9);
+  }
+  .news-image2:hover {
+    transform: scale(0.9);
+  }
+  .news-image3:hover {
+    transform: scale(0.9);
+  }
+  .news-image4:hover {
+    transform: scale(0.9);
+  }
+  .title {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Raleway;
+  }
+  .note {
+    font-size: 19px;
+    font-weight: 400;
+  }
+  .Read {
+    margin-top: 0.7rem;
+    display: block;
+    color: #b50606;
+    font-family: Raleway;
+    font-size: 19px;
+    font-weight: 700;
+  }
+  .news-content {
+    text-align: center;
   }
 }
